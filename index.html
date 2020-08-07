@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sliders</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./styles/container-grid.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
@@ -13,23 +16,38 @@
             <h1>SLIDERS</h1>
         </header>
         <main class="main">
+            <!-- BOOTSTRAP -->
             <section>
                 <header>
                     <h2>1. Слайдер на Bootstrap:</h2>
                     <ol>
-                        <li>Требует подключения: 
+                        <li> Требует подключения: 
                             <ul>
-                                <li>jQuery</li>
-                                <li>Bootstrap CSS</li>
-                                <li>Bootstrap JS</li>
+                                <li><a href="https://code.jquery.com/" target="_blank">jQuery (jQuery 1.x / minified)</a></li>
+                                <li><a href="https://www.bootstrapcdn.com/" target="_blank">Bootstrap CSS</a></li>
+                                <li><a href="https://www.bootstrapcdn.com/" target="_blank">Bootstrap JS</a></li>
                             </ul>
                         </li>
-                        <li>
-                         
+                        <li> Плюсы: 
+                            <ul>
+                                <li>высота картинок автоматически подстраивается;</li>
+                                <li>можно добавлять любой контент вместо картинок;</li>
+                                <li>простой в подключении, т.е просто подключи что надо и добавь картинок, подписей, индификаторов...</li>
+                            </ul>
+                        </li>
+                        <li> Минусы: 
+                          <ul>
+                              <li>есть скачки при разной высоте картинок, необходимо настраивать;</li>
+                          </ul>
+                        </li>
+                        <li> Информация:
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=W4OfFtd2JcE" target="_blank">Glo Academy</a></li>
+                            </ul>
                         </li>
                     </ol>
                 </header>
-                <div class="slider_bootstrap">
+                <div class="container_bootstrap">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -66,6 +84,89 @@
                       </div>
                 </div>
             </section>
+
+            <!-- FOTORAMA -->
+            <section>
+                <header>
+                    <h2>2. Слайдер на Fotorama:</h2>
+                    <ol>
+                        <li> Требует подключения: 
+                            <ul>
+                                <li><a href="https://code.jquery.com/" target="_blank">jQuery</a></li>
+                                <li><a href="https://www.bootstrapcdn.com/" target="_blank">Fotorama CSS</a></li>
+                                <li><a href="https://www.bootstrapcdn.com/" target="_blank">Fotorama JS</a></li>
+                            </ul>
+                        </li>
+                        <li> Плюсы: 
+                            <ul>
+                                <li>Просто подключать;</li>
+                                <li>Хорошо подходит для фотографий;</li>
+                                <li>Можно подстроить под свои нужды (куча настроек, которые легко подключаются);</li>
+                            </ul>
+                        </li>
+                        <li> Минусы: 
+                          <ul>
+                              <li>Не обнаружены</li>
+                          </ul>
+                        </li>
+                        <li> Информация:
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=W4OfFtd2JcE" target="_blank">Glo Academy</a></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </header>
+                <div class="container_fotorama">
+                    <div class="fotorama" data-nav="thumbs" data-allowfullscreen="true" data-loop="true">
+                        <img src="./img/slider-imgs/pug-0_960_720.jpg" alt="pug">
+                        <img src="./img/slider-imgs/pug-1_960_720.jpg" alt="pug">
+                        <img src="./img/slider-imgs/pug-3_960_720.jpg" alt="pug">
+                        <img src="./img/slider-imgs/pugs-4_960_720.jpg" alt="pug">
+                        <img src="./img/slider-imgs/pug-5_960_720.jpg" alt="pug">
+                      </div>
+                </div>
+            </section>
+
+             <!-- SLICK -->
+             <section>
+                <header>
+                    <h2>3. Слайдер на Slick:</h2>
+                    <ol>
+                        <li> Требует подключения: 
+                            <ul>
+                                <li><a href="https://code.jquery.com/" target="_blank">jQuery</a></li>
+                                <li><a href="https://kenwheeler.github.io/slick/" target="_blank">Slick CSS</a></li>
+                                <li><a href="https://kenwheeler.github.io/slick/" target="_blank">Slick JS</a></li>
+                            </ul>
+                        </li>
+                        <li> Плюсы: 
+                            <ul>
+                                <li>Просто подключать;</li>
+                                <li>Под ваши нужды настраивается очень гибко;</li>
+                            </ul>
+                        </li>
+                        <li> Минусы: 
+                          <ul>
+                              <li>Что бы настроить слайдер необходимо использовать jQuery;</li>
+                          </ul>
+                        </li>
+                        <li> Информация:
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=W4OfFtd2JcE" target="_blank">Glo Academy</a></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </header>
+                <div class="container_slick">
+                    <div class="slider_slick">
+                        <div><img src="./img/slider-imgs/pug-1_960_720.jpg" alt="pug"></div>
+                        <div><img src="./img/slider-imgs/pugs-4_960_720.jpg" alt="pug"></div>
+                        <div><img src="./img/slider-imgs/pug-0_960_720.jpg" alt="pug"></div>
+                        <div><img src="./img/slider-imgs/pug-3_960_720.jpg" alt="pug"></div>
+                        <div><img src="./img/slider-imgs/pug-5_960_720.jpg" alt="pug"></div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <p><span>&#127827;</span>2020<span>&#127827;</span></p>
@@ -73,6 +174,8 @@
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="scrips/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
